@@ -1,0 +1,13 @@
+@import url(./common.css);
+
+.studentLoginBtn,
+.adminLoginBtn {
+    background-color: crimson;
+    padding: .7rem 1rem;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 1000px;
+    cursor: pointer;
+}

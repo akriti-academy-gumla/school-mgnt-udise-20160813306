@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <script defer type="module" src="/client/public/js/pages/admin/dashboard.js"></script>
+    <link rel="stylesheet" href="/client/public/css/admindashboard.css">
+</head>
+
+<body>
+    <main>
+        <header class="header">
+            <h1>Dashboard</h1>
+            <button>Logout</button>
+        </header>
+
+        <section class="admin-details-section">
+            <div>
+                <p>Username: <span class="admin_username"></span></p>
+            </div>
+            <div>
+                <p>Your ID: <span class="admin_id"></span></p>
+            </div>
+            <div>
+                <p>Role: <span class="admin_role"></span></p>
+            </div>
+        </section>
+
+        <section class="all-student-section">
+            <a href="?adhaarNo" class="student-card">
+                <h3>Nitesh Kumar Gosai</h3>
+                <h3>9693713561</h3>
+                <h3>nitesh@123</h3>
+            </a>
+        </section>
+
+    </main>
+</body>
+
+</html>

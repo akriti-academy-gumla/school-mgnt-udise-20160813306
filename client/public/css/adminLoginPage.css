@@ -1,0 +1,31 @@
+@import url("./common.css");
+
+.admin-login-form {
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+}
+
+.admin-login-form {
+    background-color: #404040;
+    padding: 3rem;
+    border-radius: 1rem;
+}
+
+.admin-login-form input {
+    font-size: 22px;
+}
+
+.admin-login-form input:focus {
+    outline: 5px solid crimson;
+}
+
+.admin-login-btn:hover {
+    background-color: #212121;
+}
+
+.admin-login-form h2 {
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1rem;
+}
