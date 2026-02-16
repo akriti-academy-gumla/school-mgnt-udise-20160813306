@@ -2,13 +2,26 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World</title>
+    <title>Akriti Academy Lakshman Nagar, Gumla</title>
+    <script src="./script.js" defer type="module"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>Hello WOrld</h1>
+    <main>
+        <form id="admin-login-form" action="/api/v1/admin/login" method="post">
+            <h2>Admin Login Panel</h2>
+            <p id="admin-login-error"></p>
+            <div>
+                <input id="username" type="username" placeholder="username">
+            </div>
+            <div>
+                <input id="password" type="password" placeholder="password">
+            </div>
+
+            <button type="submit">Sumbit</button>
+        </form>
+    </main>
 </body>
 
 </html>

@@ -65,7 +65,14 @@ export const studentLogout = async (req, res) => {
 
 export const adminLogin = async function (req, res) {
     try {
-        console.log("Admin login called.")
+        console.log("Admin login called.");
+
+        if (req.body) {
+
+        } else {
+            return ApiResponse(res, 400, false, "Please send user data", true)
+        }
+
         const { username, password } = req.body;
         console.log(`Username: ${username} & Password: ${password}`)
         if (!username, !password) {
@@ -92,7 +99,6 @@ export const adminLogin = async function (req, res) {
             secure: false,      // true only for HTTPS
             sameSite: "lax",
         });
-
         return ApiResponse(res, 200, true, "Admin LoggedIn Successfully.", false, adminUser);
     } catch (error) {
         console.log(error);
