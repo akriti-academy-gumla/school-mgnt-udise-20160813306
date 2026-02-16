@@ -5,7 +5,6 @@ import { createAdmin } from "./controllers/admin.ctrl.js";
 import cookieParser from "cookie-parser";
 import adminRoutes from "./routes/adminAuth.routes.js";
 import studentAuthRoutes from "./routes/studentAuth.routes.js";
-import cors from "cors";
 
 // middleware
 import adminAuthorizationMiddleware from "./middlewares/authorization.mid.js"
@@ -16,10 +15,8 @@ const server = express();
 
 server.use(express.json());
 server.use(cookieParser())
-server.use(cors({
-    origin: "http://192.168.1.8:5500", // exact frontend origin
-    credentials: true
-}));
+
+
 server.use("/api/v1/admin", adminRoutes);
 server.use("/api/v1/", studentAuthRoutes);
 server.use("/api/v1/student", adminAuthorizationMiddleware, studentRoutes);
